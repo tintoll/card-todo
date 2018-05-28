@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import { Header, Layout } from "components";
 
 class App extends Component {
   render() {
     return (
-      <div>card todo</div>
+      <div>
+        <Header />
+        <Layout />
+      </div>
     );
   }
 }
