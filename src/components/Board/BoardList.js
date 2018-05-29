@@ -5,8 +5,11 @@ import Board from "./Board";
 
 const Wrapper = styled.ul`
   width: auto;
-  white-space: nowrap;
+  white-space: nowrap; /* 가로 스크롤이 되게 하기 위한 속성 */
   height : calc(100% - 2rem);
+  padding : 0;
+  margin : 0;
+  list-style : none;
 `;
 
 const BoardList = () => (

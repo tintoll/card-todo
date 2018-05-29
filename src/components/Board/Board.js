@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import oc from 'open-color';
 
+import { CardList } from "components/Card";
+
 const Wrapper = styled.li`
   width : 250px;
   height : calc(100% - 0.5rem);
@@ -9,6 +11,7 @@ const Wrapper = styled.li`
   background : ${oc.gray[3]};
   margin : 0.2rem;
   display : inline-block;
+  border-radius : 4px;
 `;
 
 const Title = styled.div`
@@ -23,14 +26,16 @@ const Title = styled.div`
 const Body =  styled.div`
   width : 100%;
   height: 95%;
-  background : white;
-  border : 1px solid ${oc.gray[1]};
+  background : transparent;
+
 `;
 
 const Board = ({title}) => (
     <Wrapper>
       <Title>{title}</Title>
-      <Body> 내용 </Body>
+      <Body>  
+        <CardList />
+      </Body>
     </Wrapper>
 );
 
