@@ -8,9 +8,11 @@ const Wrapper = styled.div`
   margin-top : 1.5rem;
   position : relative;
   width : 95%;
+  height : 100vh;
   overflow-x : auto;
   overflow-y : hidden;
 `;
+
 
 const Layout = () => (
     <Wrapper>

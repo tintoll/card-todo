@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import oc from 'open-color';
 
-const Wrapper = styled.div`
+const Wrapper = styled.li`
   width : 250px;
+  height : calc(100% - 0.5rem);
   padding : 0.5rem;
   background : ${oc.gray[3]};
   margin : 0.2rem;
@@ -13,14 +14,15 @@ const Wrapper = styled.div`
 const Title = styled.div`
   font-size : 1.2rem;
   width : 100%;
-  height : 20px;
+  height : 5%;
   display : flex;
   justify-content : center;
+  align-items : center;
 `;
 
 const Body =  styled.div`
   width : 100%;
-  height: 100%;
+  height: 95%;
   background : white;
   border : 1px solid ${oc.gray[1]};
 `;

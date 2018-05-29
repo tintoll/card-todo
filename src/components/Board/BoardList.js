@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import oc from 'open-color';
 import Board from "./Board";
 
-const Wrapper = styled.div`
-  width : 100%;
-  
+const Wrapper = styled.ul`
+  width: auto;
+  white-space: nowrap;
   height : calc(100% - 2rem);
 `;
 
